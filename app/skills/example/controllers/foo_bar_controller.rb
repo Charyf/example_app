@@ -21,4 +21,10 @@ class Example::FooBarController < ApplicationController
       reply
     end
 
+    def hello
+      greeting = intent.matches['greet']
+
+      reply(text: "Hi there, you said '#{greeting}'")
+    end
+
 end

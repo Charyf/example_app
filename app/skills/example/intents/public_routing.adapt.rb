@@ -1,11 +1,13 @@
 AdaptIntentProcessor.public_routing_for :Example do |routing|
 
   routing.register_keywords 'greet', 'Hello', 'Hi'
-  routing.register_regex 'in (?P<location>.*)'
+  # TODO replace for ruby regexps
+  # routing.register_regex 'in (?P<location>.*)'
 
-  routing.intent('Greet Intent')
+
+  # .optional('location')
+  routing.intent('GreetIntent')
       .required('greet')
-      .optional('location')
-      .route_to('foo_bar', 'foo')
+      .route_to('foo_bar', 'hello')
 
 end
