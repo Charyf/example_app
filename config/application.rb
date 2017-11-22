@@ -16,7 +16,7 @@ module TestApp
     config.i18n.default_locale = :en
 
     # Processor
-    config.intent_processor = :adapt
+    config.enabled_intent_processors = [:adapt]
 
   end
 end

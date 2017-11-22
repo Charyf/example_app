@@ -21,6 +21,10 @@ class Example::FooBarController < ApplicationController
       reply
     end
 
+    def weather
+      reply(text: "Its really shitty in #{intent.matches['location']}")
+    end
+
     def hello
       greeting = intent.matches['greet']
 
