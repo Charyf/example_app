@@ -7,6 +7,8 @@ GEM
     charyf-adapt-processor (0.1.0)
       charyf (~> 0)
       pycall (~> 1.0.3)
+    charyf-base-dispatcher (0.1.0)
+      charyf (~> 0)
     charyf_sig (1.1.2)
     coderay (1.1.2)
     concurrent-ruby (1.0.5)
@@ -24,6 +26,7 @@ PLATFORMS
 DEPENDENCIES
   charyf (~> 0.1.0)
   charyf-adapt-processor (~> 0.1.0)
+  charyf-base-dispatcher (~> 0.1.0)
   pry
 
 BUNDLED WITH
