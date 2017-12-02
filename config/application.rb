@@ -6,8 +6,7 @@ ENV["PYTHON"] = 'python3'
 # To load gem only in specific environment, add the require statement
 # to the correct file in the environments folder
 require 'charyf'
-require 'charyf/adapt_processor'
-require 'charyf/base_dispatcher'
+require_relative 'load'
 
 module TestApp
   class Application < Charyf::Application
@@ -22,6 +21,9 @@ module TestApp
 
     # Dispatcher
     config.dispatcher = :default
+
+    # Storage
+    config.storage_provider = :memory
 
   end
 end
