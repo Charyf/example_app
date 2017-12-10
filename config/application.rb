@@ -20,7 +20,10 @@ module TestApp
     config.enabled_intent_processors = [:adapt]
 
     # Dispatcher
-    config.dispatcher = :default
+    # config.dispatcher = :default
+
+    # Session
+    # config.dispatcher = :default
 
     # Storage
     config.storage_provider = :memory

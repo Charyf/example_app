@@ -3,6 +3,7 @@ Example.public_routing_for :adapt do |routing|
   routing.register_keywords 'greet', 'Hello', 'Hi'
   routing.register_keywords 'weather', 'weather'
   routing.register_keywords 'foo', 'foo'
+  routing.register_keywords 'bar', 'bar'
   # TODO replace for ruby regexps
   routing.register_regex 'in (?P<location>.*)'
 
@@ -20,5 +21,9 @@ Example.public_routing_for :adapt do |routing|
   routing.intent('Foo')
       .required('foo')
       .route_to('foo_bar', 'foo')
+
+  routing.intent('Bar')
+      .required('bar')
+      .route_to('foo_bar', 'bar')
 
 end
